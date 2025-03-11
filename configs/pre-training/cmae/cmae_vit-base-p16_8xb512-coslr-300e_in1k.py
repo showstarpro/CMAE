@@ -87,7 +87,7 @@ train_dataloader = dict(
 
 # optimizer
 update_interval=1
-gpu_num = 8*2
+gpu_num = 8
 base_lr = 1.5e-4
 lr = base_lr * train_dataloader['batch_size'] * update_interval * gpu_num / 256
 
